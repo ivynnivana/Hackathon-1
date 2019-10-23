@@ -62,13 +62,11 @@ function createCards(arr) {
 function filterFunction() {
   let searchInput = document.querySelector("#my-input");
   let filter = searchInput.value.toUpperCase();
-  let cardSection = document.querySelector(".card-container");
-  let card = cardSection.getElementsByClassName("card-container__card");
+  let cardSection = document.querySelector(".card");
+  let card = cardSection.getElementsByClassName("card-container");
 
   for (i = 0; i < card.length; i++) {
-    let symbol = card[i].getElementsByClassName(
-      "card-container__card-symbol"
-    )[0];
+    let symbol = card[i].getElementsByClassName("card-container__symbol")[0];
     let textContent = symbol.innerText;
     if (textContent.toUpperCase().indexOf(filter) > -1) {
       card[i].style.display = "";
