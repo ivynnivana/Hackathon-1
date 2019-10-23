@@ -15,11 +15,12 @@ function getRandomCompanies(data) {
   let randomArray = [];
 
   //loop 100 times and get 100 random companies
-  for (let i = 0; i < 100; i++) {
+  while (randomArray.length !== 100) {
     let random = Math.floor(Math.random() * filteredData.length);
-    randomArray.push(filteredData[random]);
+    if (randomArray.indexOf(filteredData[random]) === -1) {
+      randomArray.push(filteredData[random]);
+    }
   }
-
   return randomArray;
 }
 
@@ -69,8 +70,15 @@ function filterFunction() {
 
   for (i = 0; i < card.length; i++) {
     let symbol = card[i].getElementsByClassName("card-container__symbol")[0];
-    let textContent = symbol.innerText;
-    if (textContent.toUpperCase().indexOf(filter) > -1) {
+    let name = card[i].getElementsByClassName("card-container__name")[0];
+
+    let symbolContent = symbol.innerText;
+    let nameContent = name.innerText;
+
+    if (
+      symbolContent.toUpperCase().indexOf(filter) > -1 ||
+      nameContent.toUpperCase().indexOf(filter) > -1
+    ) {
       card[i].style.display = "";
     } else {
       card[i].style.display = "none";
