@@ -10,11 +10,14 @@ body {
           box-sizing: inherit;
 }
 
+body {
+  background-color: brown;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: salmon;
   height: 5vw;
 }
 
@@ -22,6 +25,7 @@ header {
   font-size: 2em;
   width: 900px;
   margin: 0;
+  color: white;
 }
 
 .card__text-input {
@@ -38,7 +42,7 @@ header {
   padding: 16px;
   border-radius: 15px;
   text-align: center;
-  background-color: white;
+  background-color: darksalmon;
   width: 20%;
 }
 
