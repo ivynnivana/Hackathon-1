@@ -1,35 +1,35 @@
-let testArr = [
-  {
-    name: "Boulder",
-    symbol: "AAA",
-    iexID: "$152.53"
-  },
-  {
-    name: "Liberty INT",
-    symbol: "SHI",
-    iexID: "$532.53"
-  },
-  {
-    name: "Newark",
-    symbol: "POO",
-    iexID: "$12.53"
-  },
-  {
-    name: "Dunno",
-    symbol: "jgk",
-    iexID: "$976.53"
-  },
-  {
-    name: "Kingston",
-    symbol: "ygk",
-    iexID: "$1000.53"
-  },
-  {
-    name: "Vancouver",
-    symbol: "YVR",
-    iexID: "$365.53"
-  }
-];
+// let testArr = [
+//   {
+//     name: "Boulder",
+//     symbol: "AAA",
+//     iexID: "$152.53"
+//   },
+//   {
+//     name: "Liberty INT",
+//     symbol: "SHI",
+//     iexID: "$532.53"
+//   },
+//   {
+//     name: "Newark",
+//     symbol: "POO",
+//     iexID: "$12.53"
+//   },
+//   {
+//     name: "Dunno",
+//     symbol: "jgk",
+//     iexID: "$976.53"
+//   },
+//   {
+//     name: "Kingston",
+//     symbol: "ygk",
+//     iexID: "$1000.53"
+//   },
+//   {
+//     name: "Vancouver",
+//     symbol: "YVR",
+//     iexID: "$365.53"
+//   }
+// ];
 
 function createCards(arr) {
   let container = document.querySelector(".card");
@@ -54,7 +54,7 @@ function createCards(arr) {
     companyName.appendChild(companyNameValue);
     let companySymbolValue = document.createTextNode(arr[i]["symbol"]); //creating text node and appending symbol value for arr[i]
     companySymbol.appendChild(companySymbolValue);
-    let companyIDValue = document.createTextNode(arr[i]["iexID"]); //creating text node and appending iexID value for arr[i]
+    let companyIDValue = document.createTextNode(arr[i]["id"]); //creating text node and appending iexID value for arr[i]
     companyID.appendChild(companyIDValue);
   }
 }
