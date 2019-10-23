@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI;AACJ,IAAI,CAAC;EACH,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,CAAC,CAAC,CAAC,AAAA,OAAO;AACV,CAAC,AAAA,MAAM,CAAC;EACN,UAAU,EAAE,OAAO;CACpB",
+    "sources": [
+        "main.scss",
+        "partials/hackathon.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
