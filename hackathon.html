@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="hackathon.css" />
+    <title>IEX Trading App</title>
+  </head>
+  <header>
+    <h1 class="header-title">IEX Trading Instant App</h1>
+    <nav class="card__text">
+      <input
+        class="card__text-input"
+        type="text"
+        name="input"
+        value=""
+        placeholder="Search Companies..."
+      />
+    </nav>
+  </header>
+  <body>
+    <div class="card">
+      <div class="card-container">
+        <h3 class="card-container__name">Company name</h3>
+        <p class="card-container__symbol">Company Symbol</p>
+        <p class="card-container__ID">Company ID</p>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./scripts/api_info.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
