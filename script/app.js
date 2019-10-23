@@ -77,7 +77,7 @@ function filterFunction() {
 
     if (
       symbolContent.toUpperCase().indexOf(filter) > -1 ||
-      nameContent.toUpperCase().indexOf(filter) > -1
+      nameContent.indexOf(filter) > -1
     ) {
       card[i].style.display = "";
     } else {
